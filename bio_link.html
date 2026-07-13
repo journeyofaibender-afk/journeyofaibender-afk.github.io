@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>@journeyofaibender — AI that helps</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1d24; --txt:#e8eaf0; --accent:#5eead4; --mut:#9aa3b2; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         background:var(--bg); color:var(--txt); display:flex; justify-content:center; padding:32px 16px; }
+  .wrap { width:100%; max-width:480px; }
+  .avatar { width:96px; height:96px; border-radius:50%; background:linear-gradient(135deg,#5eead4,#6366f1);
+            margin:0 auto 12px; display:flex; align-items:center; justify-content:center; font-size:40px; }
+  h1 { text-align:center; font-size:22px; margin:0; }
+  p.sub { text-align:center; color:var(--mut); margin:6px 0 22px; }
+  a.btn { display:block; background:var(--card); color:var(--txt); text-decoration:none;
+          padding:16px 18px; border-radius:14px; margin:10px 0; font-weight:600;
+          border:1px solid #262b35; transition:.15s; }
+  a.btn:hover { border-color:var(--accent); transform:translateY(-1px); }
+  a.btn span { display:block; font-weight:400; font-size:13px; color:var(--mut); margin-top:4px; }
+  a.primary { border-color:var(--accent); background:#15302c; }
+  .sec { margin:26px 0 8px; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--mut); }
+  .signup { background:#15302c; border:1px solid var(--accent); border-radius:14px; padding:16px 18px; margin:14px 0; }
+  .signup p { margin:0 0 10px; font-size:14px; }
+  .signup input { width:100%; padding:11px 12px; border-radius:10px; border:1px solid #2c333f;
+                  background:#0f1115; color:var(--txt); font-size:14px; margin-bottom:10px; }
+  .signup button { width:100%; padding:11px; border:0; border-radius:10px; background:var(--accent);
+                   color:#06231e; font-weight:700; font-size:14px; cursor:pointer; }
+  .signup button:active { transform:scale(.99); }
+  .fallback { margin:10px 0 0; font-size:13px; color:var(--mut); }
+  .fallback a { color:var(--accent); font-weight:600; text-decoration:none; }
+  .foot { text-align:center; color:var(--mut); font-size:12px; margin-top:24px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="avatar">🤖</div>
+  <h1>@journeyofaibender</h1>
+  <p class="sub">AI that actually helps people. Free kit + honest tool picks.</p>
+
+  <!-- PRIMARY lead magnet (no signup) -->
+  <a class="btn primary" href="kit.html">📦 Free AI Helper Starter Kit
+    <span>20 copy-paste prompts for non-techies — no signup</span></a>
+
+  <!-- EMAIL CAPTURE: the real long-term asset.
+       To make this form actually collect emails, create a FREE Formspree
+       account (formspree.io), make a form, set its destination to
+       journeyofaibender@gmail.com, and replace REPLACE_WITH_YOUR_FORM_ID
+       below with your /f/xxxxxx form ID. Until then, the mailto fallback
+       below still captures interested people. -->
+  <div class="signup">
+    <p>📬 Get the <strong>expanded 40-prompt kit + video walkthrough</strong> (free):</p>
+    <form action="https://formspree.io/f/xykrypzy" method="POST">
+      <input type="email" name="email" placeholder="you@email.com" required />
+      <button type="submit">Send me the kit</button>
+      <input type="hidden" name="_next" value="kit-expanded.html" />
+    </form>
+    <p class="fallback">No Formspree yet? <a href="mailto:journeyofaibender@gmail.com?subject=AI%20Helper%20Kit&body=Hi!%20Please%20send%20me%20the%20expanded%20AI%20Helper%20kit.">Email me directly &rarr; journeyofaibender@gmail.com</a></p>
+  </div>
+
+  <div class="sec">My honest picks — no affiliate</div>
+  <p class="sub" style="margin:0 0 10px;">I use these and like them. I don't earn if you sign up.</p>
+  <a class="btn" href="https://chat.openai.com/">⚡ ChatGPT
+    <span>My daily driver for helping others (no affiliate)</span></a>
+  <a class="btn" href="https://gemini.google.com/">🌟 Gemini
+    <span>Great free tier + long docs (no affiliate)</span></a>
+  <a class="btn" href="https://claude.ai/">🧠 Claude
+    <span>Best for careful writing/explanations (no affiliate)</span></a>
+  <a class="btn" href="https://capcut.com/">🎬 CapCut
+    <span>Free reel editor I use (no affiliate)</span></a>
+
+  <div class="sec">Affiliate picks — I may earn</div>
+  <p class="sub" style="margin:0 0 10px;">If you sign up via these, I may get a small commission at no extra cost. Transparency &gt; hype.</p>
+  <a class="btn" href="https://www.canva.com/">🎨 Canva Pro
+    <span>Design tool I recommend — affiliate (replace href with your link)</span></a>
+  <!-- Add more ONLY after you join their program, e.g.:
+  <a class="btn" href="https://www.grammarly.com/...">✍️ Grammarly <span>affiliate</span></a>
+  <a class="btn" href="https://www.notion.so/...">🗒️ Notion <span>affiliate</span></a> -->
+
+  <a class="btn" href="https://instagram.com/journeyofaibender">📷 Instagram
+    <span>New helpful AI post every Mon / Wed / Fri</span></a>
+
+  <div class="foot">Some links may be affiliate — no extra cost to you. Thanks for the support 💚</div>
+</div>
+</body>
+</html>
