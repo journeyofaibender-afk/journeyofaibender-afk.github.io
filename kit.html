@@ -24,6 +24,12 @@
                   padding:3px 8px; cursor:pointer; }
   .prompt .copy:active { transform:scale(.96); }
   .rules li { margin:6px 0; }
+  .signup { background:#15302c; border:1px solid var(--accent); border-radius:14px; padding:16px 18px; margin:26px 0; }
+  .signup p { margin:0 0 10px; font-size:14px; }
+  .signup input { width:100%; padding:11px 12px; border-radius:10px; border:1px solid #2c333f;
+                  background:#0f1115; color:var(--txt); font-size:14px; margin-bottom:10px; }
+  .signup button { width:100%; padding:11px; border:0; border-radius:10px; background:var(--accent);
+                   color:#06231e; font-weight:700; font-size:14px; cursor:pointer; }
   .back { display:block; text-align:center; margin:34px 0 0; color:var(--accent);
           text-decoration:none; font-weight:600; }
   .foot { text-align:center; color:var(--mut); font-size:12px; margin-top:22px; }
@@ -79,9 +85,18 @@
     <li>Never share passwords or private info with any AI.</li>
   </ul>
 
+  <!-- EMAIL CAPTURE (the long-term asset). Replace the Formspree ID. -->
+  <div class="signup">
+    <p>📬 Want the <strong>expanded 40-prompt kit + video walkthrough</strong>? Free, just drop your email:</p>
+    <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+      <input type="email" name="email" placeholder="you@email.com" required />
+      <button type="submit">Send me the kit</button>
+      <input type="hidden" name="_next" value="kit-expanded.html" />
+    </form>
+  </div>
+
   <a class="back" href="bio_link.html">← Back to all free tools &amp; honest picks</a>
-  <p class="foot">Want the expanded 40-prompt version + video walkthrough? Find it on the link-in-bio page.<br/>
-  (Some tool links there may be affiliate — no extra cost to you. Transparency &gt; hype. 💚)</p>
+  <p class="foot">Some tool links on the link-in-bio page may be affiliate — no extra cost to you. Transparency &gt; hype. 💚</p>
 </div>
 
 <script>
