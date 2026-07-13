@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free AI Helper Starter Kit — @journeyofaibender</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1d24; --txt:#e8eaf0; --accent:#5eead4; --mut:#9aa3b2; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         background:var(--bg); color:var(--txt); line-height:1.55; }
+  .wrap { max-width:680px; margin:0 auto; padding:28px 18px 60px; }
+  .avatar { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,#5eead4,#6366f1);
+            display:flex; align-items:center; justify-content:center; font-size:32px; margin-bottom:10px; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  .sub { color:var(--mut); margin:0 0 22px; }
+  .how { background:var(--card); border:1px solid #262b35; border-radius:14px; padding:14px 16px;
+         color:var(--mut); font-size:14px; margin-bottom:26px; }
+  h2 { font-size:18px; margin:30px 0 12px; color:var(--accent); }
+  .prompt { background:var(--card); border:1px solid #262b35; border-radius:12px;
+            padding:12px 14px; margin:10px 0; position:relative; font-size:15px; }
+  .prompt .copy { position:absolute; top:10px; right:10px; font-size:12px; color:var(--accent);
+                  background:transparent; border:1px solid #2c333f; border-radius:8px;
+                  padding:3px 8px; cursor:pointer; }
+  .prompt .copy:active { transform:scale(.96); }
+  .rules li { margin:6px 0; }
+  .back { display:block; text-align:center; margin:34px 0 0; color:var(--accent);
+          text-decoration:none; font-weight:600; }
+  .foot { text-align:center; color:var(--mut); font-size:12px; margin-top:22px; }
+  code { background:#11141a; padding:1px 5px; border-radius:5px; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="avatar">🤖</div>
+  <h1>AI Helper Starter Kit</h1>
+  <p class="sub">A free copy-paste prompt pack by @journeyofaibender. Share freely — just credit. 💚</p>
+
+  <div class="how">
+    <strong>How to use:</strong> open ChatGPT / Gemini / Claude, paste a prompt,
+    fill the <code>[brackets]</code>, hit enter. That's it. No tech skills required.
+    Tap <em>Copy</em> on any prompt.
+  </div>
+
+  <h2>1) Everyday Help</h2>
+  <div class="prompt">"Act as a friendly assistant. Help me write a clear [email / text / message] to [person] about [topic]. Keep it warm and simple."<button class="copy">Copy</button></div>
+  <div class="prompt">"Summarize this like I'm 10 years old: [paste text]."<button class="copy">Copy</button></div>
+  <div class="prompt">"Fix the grammar and tone of this so it sounds confident but kind: [paste text]."<button class="copy">Copy</button></div>
+  <div class="prompt">"Give me 5 ideas for [occasion, e.g. my mom's birthday] that I can do on a [budget]."<button class="copy">Copy</button></div>
+
+  <h2>2) Small Business / Side Hustle</h2>
+  <div class="prompt">"I run a [type of business]. Write 3 Instagram captions that sound like me and mention [product/service]."<button class="copy">Copy</button></div>
+  <div class="prompt">"Write a friendly auto-reply for my DMs that answers: hours, where to order, and how to pay."<button class="copy">Copy</button></div>
+  <div class="prompt">"Turn my last 5 sold-out products into a short, punchy bio for my profile."<button class="copy">Copy</button></div>
+  <div class="prompt">"Give me 10 post ideas for a [niche] business that don't feel salesy."<button class="copy">Copy</button></div>
+
+  <h2>3) For Non-Techies / Learners</h2>
+  <div class="prompt">"Act as a patient teacher. Explain [topic] in plain language with one real-life example."<button class="copy">Copy</button></div>
+  <div class="prompt">"Quiz me on [subject] with 5 easy questions, then explain any I get wrong."<button class="copy">Copy</button></div>
+  <div class="prompt">"Help me write a [resume / cover letter] for a [role]. Ask me 3 questions first."<button class="copy">Copy</button></div>
+  <div class="prompt">"I'm overwhelmed. Break [task] into 5 tiny steps I can do today."<button class="copy">Copy</button></div>
+
+  <h2>4) Accessibility & Care</h2>
+  <div class="prompt">"Describe this photo out loud in detail for someone who can't see it: [describe or attach]."<button class="copy">Copy</button></div>
+  <div class="prompt">"Turn this voice note into a clean written message: [paste]."<button class="copy">Copy</button></div>
+  <div class="prompt">"Make a simple daily routine checklist for [person/condition] that's easy to follow."<button class="copy">Copy</button></div>
+  <div class="prompt">"Explain this medical/legal doc in plain words (not advice): [paste]."<button class="copy">Copy</button></div>
+
+  <h2>5) Creative & Joy</h2>
+  <div class="prompt">"Write lyrics for a short song about [theme] in a [happy / calm] mood."<button class="copy">Copy</button></div>
+  <div class="prompt">"Help me write a heartfelt caption for a photo of [moment]."<button class="copy">Copy</button></div>
+  <div class="prompt">"Plan a 1-hour fun activity for [kids / friends / family] with things we have at home."<button class="copy">Copy</button></div>
+
+  <h2>Rules of Thumb</h2>
+  <ul class="rules">
+    <li><strong>WHO + WHAT:</strong> tell the AI who to be and what to do.</li>
+    <li>One task per prompt.</li>
+    <li>If it's wrong, say "try again, make it [shorter / friendlier / simpler]."</li>
+    <li>Never share passwords or private info with any AI.</li>
+  </ul>
+
+  <a class="back" href="bio_link.html">← Back to all free tools &amp; honest picks</a>
+  <p class="foot">Want the expanded 40-prompt version + video walkthrough? Find it on the link-in-bio page.<br/>
+  (Some tool links there may be affiliate — no extra cost to you. Transparency &gt; hype. 💚)</p>
+</div>
+
+<script>
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.parentElement.firstChild.textContent.trim();
+      navigator.clipboard.writeText(text).then(function(){
+        var old = btn.textContent; btn.textContent = 'Copied!';
+        setTimeout(function(){ btn.textContent = old; }, 1200);
+      });
+    });
+  });
+</script>
+</body>
+</html>
